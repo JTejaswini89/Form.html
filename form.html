@@ -1,0 +1,96 @@
+<html>
+<head>
+<style>
+.center{
+text-align:center;
+border:3px solid green;
+}
+body::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+    background-image: url("C:/Users/tejas/OneDrive/Pictures/Code/back.jpg");
+    background-size: cover;
+background-size: cover;
+opacity: 0.5; 
+z-index: -1; 
+}
+.hidden {
+    display: none;
+}
+</style>
+</head>
+<body>
+<div class="center">TRY IT ONCE</div>
+<form id="myForm">
+<label for="YourName">Your Name:</label><br>
+<input type="text" id="YourName" name="YourName"><br>
+<label for="NickName">Nick Name:</label><br>
+<input type="text" id="NickName" name="NickName"><br>
+<label for="YourMail">Your Mail:</label><br>
+<input type="text" id="YourMail" name="YourMail"><br>
+<label for="PhoneNumber">Phone Number:</label><br>
+<input type="text" id="PhoneNumber" name="PhoneNumber"><br>
+<label for="AGE">AGE:</label><br>
+<input type="text" id="AGE" name="AGE"><br>
+<label for="DOB">Dateof Birth:</label><br>
+<input type="text" id="DOB" name="DOB"><br>
+<label for="Fav">Fav Item:</label><br>
+<input type="text" id="Fav" name="Fav"><br>
+<label for="Watch">Do you Watch:</label><br>
+<input type="radio" id="Anime" name="ANIME" value="Anime">
+<label for="Anime">ANIME</label><br>
+<input type="radio" id="Movie" name="MOVIE" value="Movie">
+<label for="Movie">MOVIE</label><br>
+<input type="radio" id="K-Drama" name="K-DRAMA" value="K-Drama">
+<label for="K-Drama">K-DRAMA</label><br>
+<label for="Favourite character">Favourite character:</label><br>
+<input type="radio" id="Taki" name="Taki Tachibana" value="ANIME">
+<label for="Taki">Taki Tachibana</label>
+<input type="radio" id="Mitsuha" name="Mitsuha" value="ANIME">
+<label for="Mitsuha">Mitsuha</label><br>
+<input type="radio" id="Akihito" name="Akihito" value="ANIME">
+<label for="Akihito">Akihito</label>
+<input type="radio" id="Haruna" name="Haruna" value="ANIME">
+<label for="Haruna">Haruna</label><br>
+<input type="radio" id="Devara" name="Devara" value="MOVIE">
+<label for="Devara">Devara</label>
+<input type="radio" id="Thangam" name="Thangam" value="MOVIE">
+<label for="Thangam">Thangam</label><br>
+<input type="radio" id="Puspha" name="Puspha" value="MOVIE">
+<label for="Puspha">Puspha</label>
+<input type="radio" id="Srivalli" name="Srivalli" value="MOVIE">
+<label for="Srivalli">Srivalli</label><br>
+<input type="radio" id="Hae-in" name="Hae-in" value="K-DRAMA">
+<label for="Hae-in">Hae-in</label>
+<input type="radio" id="Hyun-woo" name="Hyun-woo" value="K-DRAMA">
+<label for="Hyun-woo">Hyun-woo</label><br>
+<input type="radio" id="Bong-Soon" name="Bong-Soon" value="K-DRAMA">
+<label for="Bong-Soon">Bong-Soon</label>
+<input type="radio" id="Min-Hyeok" name="Min-Hyeok" value="K-DRAMA">
+<label for="Min-Hyeok">Min-Hyeok</label><br>
+<label for="Reason you love it">Reason you like it</label><br>
+<input for="text" id="Reason you like it" name="Reason you like it"><br>
+<label for="Any Suggestion:">Any Suggestions:</label><br>
+<input for="Any Suggestion" id="Any Suggestion" name="Any Suggestion"><br>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</form>
+<video id="myVideo" width="320" height="240" class="hidden" controls>
+    <source src="C:/Users/tejas/OneDrive/Pictures/edited/myediting.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<script>
+document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    var video = document.getElementById('myVideo');
+    video.classList.remove('hidden');
+    video.play();
+});
+</script>
+<input type="reset" value="Reset">
+</body>
+</html>
