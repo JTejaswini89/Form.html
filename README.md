@@ -32,4 +32,4 @@
 # 🎬 Click Submit – and enjoy the custom video experience!
 
 # 🔄 Use the Reset button to clear the form anytime.
-# TAHNKYOU 😊
+# THANKYOU 😊
